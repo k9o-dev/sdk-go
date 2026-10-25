@@ -1,0 +1,9 @@
+# Native engine libraries are CI-injected per platform and NEVER committed. A dev/test build of the engine
+# (cargo --features test-trust-root) embeds the published TEST root public key; it must never reach a shipped artifact.
+# Anchored: the generated binding sources in k9o_keep_core_ffi_uniffi/ ARE committed (drift-checked).
+*.dylib
+*.so
+*.dll
+*.a
+/k9o_keep_core_ffi_uniffi/lib/
+/k9o_keep_core_ffi_uniffi/cgo_*_*.go
