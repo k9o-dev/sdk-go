@@ -1,0 +1,7 @@
+# native cdylib — CI-injected per platform from the kibo artifact bundle (gitignored).
+# The generated uniffi-bindgen-go binding (kibo_kms_rest_ffi/) IS committed +
+# drift-checked per W7 reply-035; only the platform lib is fetched.
+*.dylib
+*.so
+*.dll
+libkibo_kms_rest_ffi.*
